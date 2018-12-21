@@ -1,0 +1,809 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="style/demo.css">
+    <script>
+		window.onload = function () {
+			var oTab = document.getElementById('tab');
+			var aLi = oTab.getElementsByTagName('li');
+
+			for (var i = 0; i < aLi.length; i++) {
+				aLi[i].onmouseover = function () {
+					for (var i = 0; i < aLi.length; i++) {
+						aLi[i].className = '';
+					}
+					this.className = 'list-active';
+				}
+			}
+
+		}
+    </script>
+</head>
+<body>
+<div class="top"><!-- top begin -->
+    <div class="top-left"></div>
+    <div class="top-center">
+        <p class="top-center-left">
+            <span>切换城市：</span>
+            <a href="#">北京</a>
+            <a href="#">上海</a>
+            <a href="#">福州</a>
+            <a href="#">广州</a>
+            <a href="#">青岛</a>
+        </p>
+        <div class="top-center-right">
+            <p>
+                <a href="#">加盟100度</a>
+            </p>
+            <em>|</em>
+            <p>
+                <a href="#">店铺管理</a>
+            </p>
+        </div>
+    </div>
+    <div class="top-right"></div>
+</div><!-- top end-->
+<div class="icons"><!--icons begin-->
+    <div class="icons-left">
+        <p>
+            <img src="images/4.png" alt="">
+            <a href="#">美食</a>
+        </p>
+        <p>
+            <img src="images/7.png" alt="">
+            <a href="#">夜店</a>
+        </p>
+        <p>
+            <img src="images/8.png" alt="">
+            <a href="#">购物</a>
+        </p>
+        <p>
+            <img src="images/9.png" alt="">
+            <a href="#">文化</a>
+        </p>
+        <p>
+            <img src="images/10.png" alt="">
+            <a href="#">休闲</a>
+        </p>
+    </div>
+    <img src="images/11.png" class="logo" alt="100度-logo">
+    <div class="icons-right">
+        <p>
+            <img src="images/12.png" alt="">
+            <a href="#">烧客空间</a>
+        </p>
+        <p>
+            <img src="images/13.png" alt="">
+            <a href="#">知道分子</a>
+        </p>
+        <p>
+            <img src="images/14.png" alt="">
+            <a href="#">白吃白拿</a>
+        </p>
+        <p class="mr8">
+            <img src="images/5.png" alt="">
+            <a href="#">烧客论坛</a>
+        </p>
+        <p>
+            <img src="images/6.png" alt="">
+            <a href="#">企业俱乐部</a>
+        </p>
+    </div>
+
+</div><!--icons end-->
+<div class="search"><!--search begin-->
+    <div class="search-left"></div>
+    <div class="search-content">
+        <img src="images/33.png" alt="" class="mark-img">
+        <ul class="menu">
+            <li><a href="#" class="active">搜店</a></li>
+            <li><a href="#">地址</a></li>
+            <li><a href="#">优惠券</a></li>
+            <li><a href="#">全文</a></li>
+            <li><a href="#">视频</a></li>
+        </ul>
+        <div class="search-input">
+            <p>
+                <input type="text" placeholder="例如：荷棠鱼坊烤鱼 或 樱花日本料理">
+                <a href="#" class="search-button"></a>
+            </p>
+            <div>
+                <a href="#">金钱豹、</a>
+                <a href="#">大江南、</a>
+                <a href="#">湘水之珠、</a>
+                <a href="#">德育楼</a>
+                <a href="#">荷棠鱼坊烤鱼</a>
+                <a href="#">SOHO尚都</a>
+                <a href="#">湘味楼</a>
+            </div>
+        </div>
+        <div class="news">
+            <p class="news-left">
+                <i></i>
+                <strong>萱萱</strong>
+                <span>5分钟前</span>
+            </p>
+            <ol>
+                <li><a href="#">写了一篇新文章 : 那些灿烂华美的瞬间...</a></li>
+            </ol>
+            <p class="arrow">
+                <a href="#"></a>
+                <a href="#"></a>
+            </p>
+        </div>
+    </div>
+    <div class="search-right"></div>
+</div><!--search end-->
+<div class="wrap"><!--wrap begin-->
+    <div class="wrap-left"><!--wrap-left begin-->
+        <div class="content1">
+            <div class="con-left">
+                <h3>WHAT' HOT</h3>
+                <video src="video/video.mp4" autoplay controls>
+                    抱歉,您的浏览器不支持video播放,请升级您的浏览器.
+                </video>
+                <ul>
+                    <li><i></i><a href="javascript:;">人民大会堂万人大礼堂灯光璀璨</a></li>
+                    <li><i></i><a href="javascript:;">二楼眺台悬挂着横幅</a></li>
+                    <li><i></i><a href="javascript:;">习近平等领导同志步入大礼堂</a></li>
+                </ul>
+            </div>
+            <div class="con-right">
+                <ul>
+                    <li>
+                        <a href="javascript:;" class="on">
+                            <span>HOT SHOP</span>
+                            <strong>红店铺</strong>
+                            <i></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:;">
+                            <span>NEW SHOP</span>
+                            <strong>新开张</strong>
+                            <i></i>
+                        </a>
+                    </li>
+                </ul>
+                <div>
+                    <img src="images/img-1.jpg" alt="">
+                    <h5><a href="javascript:;">御舟和涵珍园国际酒店</a></h5>
+                    <p>区域：朝阳/CBD</p>
+                    <p>人均：180元</p>
+                    <p>人气：12321</p>
+                    <em></em>
+                    <i></i>
+                </div>
+                <div>
+                    <img src="images/img-1.jpg" alt="">
+                    <h5><a href="javascript:;">御舟和涵珍园国际酒店</a></h5>
+                    <p>区域：朝阳/CBD</p>
+                    <p>人均：180元</p>
+                    <p>人气：12321</p>
+                    <!--<em></em>-->
+                    <i></i>
+                </div>
+                <div>
+                    <img src="images/img-1.jpg" alt="">
+                    <h5><a href="javascript:;">御舟和涵珍园国际酒店</a></h5>
+                    <p>区域：朝阳/CBD</p>
+                    <p>人均：180元</p>
+                    <p>人气：12321</p>
+                    <!--<em></em>-->
+                    <i></i>
+                </div>
+                <a href="javascript:;" class="more">more</a>
+            </div>
+        </div>
+        <a href="javascript:;" class="aaa">
+            <img src="images/aaa.jpg" alt="">
+        </a>
+        <div class="content2">
+            <div class="con2-left">
+                <div class="subnav">
+                    <p>
+                        <span>LUCKY YODAY</span>
+                        <strong>每日活动</strong>
+                    </p>
+                    <h2>2014.2</h2>
+                    <i></i>
+                </div>
+                <div class="shoes">
+                    <img src="images/15.png" alt="" class="shoes-img-left">
+                    <div>
+                        <img src="images/month1.png" alt="">
+                        <img src="images/month2.png" alt="">
+                        <strong>本日主题XXXXXXX</strong>
+                    </div>
+                    <p>《国家相册》特别节目: 父亲的眼神 -- 为了探索新路，他在荒滩上为困顿的中国做了一项试验……</p>
+                </div>
+                <div class="calendar">
+                    <p>
+                        <strong>MON</strong>
+                        <strong>TUE</strong>
+                        <strong>WED</strong>
+                        <strong>THU</strong>
+                        <strong>FRI</strong>
+                        <strong>SAT</strong>
+                        <strong>SUN</strong>
+                    </p>
+                    <ul>
+                        <li>
+                            <a href="javascript:;" class="a-color">29</a>
+                            <a href="javascript:;" class="a-color">30</a>
+                            <a href="javascript:;">1</a>
+                            <a href="javascript:;">2</a>
+                            <a href="javascript:;">3</a>
+                            <a href="javascript:;">4</a>
+                            <a href="javascript:;">5</a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">6</a>
+                            <a href="javascript:;">7</a>
+                            <a href="javascript:;">8</a>
+                            <a href="javascript:;">9</a>
+                            <a href="javascript:;">10</a>
+                            <a href="javascript:;">11</a>
+                            <a href="javascript:;">12</a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">13</a>
+                            <a href="javascript:;">14</a>
+                            <a href="javascript:;">15</a>
+                            <a href="javascript:;">16</a>
+                            <a href="javascript:;">17</a>
+                            <a href="javascript:;">18</a>
+                            <a href="javascript:;">19</a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">20</a>
+                            <a href="javascript:;">21</a>
+                            <a href="javascript:;">22</a>
+                            <a href="javascript:;">23</a>
+                            <a href="javascript:;">24</a>
+                            <a href="javascript:;">25</a>
+                            <a href="javascript:;">26</a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">27</a>
+                            <a href="javascript:;">28</a>
+                            <a href="javascript:;">29</a>
+                            <a href="javascript:;">30</a>
+                            <a href="javascript:;">31</a>
+                            <a href="javascript:;">1</a>
+                            <a href="javascript:;">2</a>
+                        </li>
+                        <li>
+                            <a href="javascript:;" class="a-color">3</a>
+                            <a href="javascript:;" class="a-color">4</a>
+                            <a href="javascript:;" class="a-color">5</a>
+                            <a href="javascript:;" class="a-color">6</a>
+                            <a href="javascript:;" class="a-color">7</a>
+                            <a href="javascript:;" class="a-color">8</a>
+                            <a href="javascript:;" class="a-color">9</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="con2-right">
+                <p class="title">
+                    <span>RECOMMEND</span>
+                    <strong>精彩推荐</strong>
+                </p>
+                <div class="tab">
+                    <p>
+                        <img src="images/img-big.png" alt="">
+                        <span>爸爸去哪儿?</span>
+                    </p>
+                    <ul>
+                        <li><img src="images/img-small.jpg" alt="" class="img-active"></li>
+                        <li><img src="images/img-small.jpg" alt=""></li>
+                        <li><img src="images/img-small.jpg" alt=""></li>
+                    </ul>
+                </div>
+                <ol class="list">
+                    <li><i></i><a href="javascript:;">马里亚纳海沟暗藏于亚洲东部太平洋底</a><span>08/07/22</span></li>
+                    <li><i class="different"></i><a href="javascript:;">中国科学院深海科学与工程研究所地处</a><span>08/07/22</span></li>
+                    <li><i></i><a href="javascript:;">位杂交水稻之父总对人说，杂交水</a><span>08/07/22</span></li>
+                    <li><i class="different"></i><a href="javascript:;">88岁的袁隆平院士拉着习近平的手</a><span>08/07/22</span></li>
+                    <li><i></i><a href="javascript:;">沟的海水样品仔细端详，然后同</a><span>08/07/22</span></li>
+                    <li><i class="different"></i><a href="javascript:;">从万米之下，到一粒种子，习</a><span>08/07/22</span></li>
+                    <li><i></i><a href="javascript:;">香港对面，邓伟雄在12楼的房间里</a><span>08/07/22</span></li>
+                    <li><i></i><a href="javascript:;">对海内外时政观察者来说，之前一</a><span>08/07/22</span></li>
+                </ol>
+            </div>
+        </div>
+        <div class="content-3">
+            <div class="con3-left">
+                <ul>
+                    <li>
+                        <a href="javascript:;" class="a-active">
+                            <span>SUBWAY</span>
+                            <strong>地铁交通</strong>
+                            <i></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:;">
+                            <span>MAP</span>
+                            <strong>生活圈</strong>
+                            <i></i>
+                        </a>
+                    </li>
+                </ul>
+                <img src="images/subway-map.png" alt="">
+            </div>
+            <div class="con3-right">
+                <p class="sub-title">
+                    <span>BBS</span>
+                    <strong>论坛</strong>
+                    <a href="javascript:;">MORE</a>
+                </p>
+                <ul id="tab">
+                    <li>
+                        <p>
+                            <strong>01</strong>
+                            <a href="javascript:;">包你没见过的古怪餐厅</a>
+                            <span>世说新语</span>
+                        </p>
+                        <div>
+                            <img src="images/16.png" alt="">
+                            <h5>画皮之 -- 日剧中的手机</h5>
+                            <h6>阿瑞斯</h6>
+                            <em>ONE</em>
+                        </div>
+                    </li>
+                    <li>
+                        <p>
+                            <strong>02</strong>
+                            <a href="javascript:;">包你没见过的古怪餐厅</a>
+                            <span>世说新语</span>
+                        </p>
+                        <div>
+                            <img src="images/16.png" alt="">
+                            <h5>画皮之 -- 日剧中的手机</h5>
+                            <h6>阿瑞斯</h6>
+                            <em>TWO</em>
+                        </div>
+                    </li>
+                    <li>
+                        <p>
+                            <strong>03</strong>
+                            <a href="javascript:;">包你没见过的古怪餐厅</a>
+                            <span>世说新语</span>
+                        </p>
+                        <div>
+                            <img src="images/16.png" alt="">
+                            <h5>画皮之 -- 日剧中的手机</h5>
+                            <h6>阿瑞斯</h6>
+                            <em>THREE</em>
+                        </div>
+                    </li>
+                    <li class="list-active">
+                        <p>
+                            <strong>04</strong>
+                            <a href="javascript:;">包你没见过的古怪餐厅</a>
+                            <span>世说新语</span>
+                        </p>
+                        <div>
+                            <img src="images/16.png" alt="">
+                            <h5>画皮之 -- 日剧中的手机</h5>
+                            <h6>阿瑞斯</h6>
+                            <em>FOUR</em>
+                        </div>
+                    </li>
+                    <li>
+                        <p>
+                            <strong>05</strong>
+                            <a href="javascript:;">包你没见过的古怪餐厅</a>
+                            <span>世说新语</span>
+                        </p>
+                        <div>
+                            <img src="images/16.png" alt="">
+                            <h5>画皮之 -- 日剧中的手机</h5>
+                            <h6>阿瑞斯</h6>
+                            <em>FIVE</em>
+                        </div>
+                    </li>
+                    <li>
+                        <p>
+                            <strong>06</strong>
+                            <a href="javascript:;">包你没见过的古怪餐厅</a>
+                            <span>世说新语</span>
+                        </p>
+                        <div>
+                            <img src="images/16.png" alt="">
+                            <h5>画皮之 -- 日剧中的手机</h5>
+                            <h6>阿瑞斯</h6>
+                            <em>SIX</em>
+                        </div>
+                    </li>
+                    <li>
+                        <p>
+                            <strong>07</strong>
+                            <a href="javascript:;">包你没见过的古怪餐厅</a>
+                            <span>世说新语</span>
+                        </p>
+                        <div>
+                            <img src="images/16.png" alt="">
+                            <h5>画皮之 -- 日剧中的手机</h5>
+                            <h6>阿瑞斯</h6>
+                            <em>SEVEN</em>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <a href="javascript:;" class="aaa">
+            <img src="images/aaa.jpg" alt="">
+        </a>
+        <div class="content4">
+            <div class="con4-left">
+                <p class="sub-title">
+                    <span>LIFESTYLE ADVICE</span>
+                    <strong>知道分子</strong>
+                    <a href="javascript:;">MORE</a>
+                </p>
+                <div class="menu">
+                    <a href="javascript:;" class="on">有人在问<i></i></a>
+                    <a href="javascript:;">有人知道<i></i></a>
+                    <a href="javascript:;">热门问题<i></i></a>
+                </div>
+                <p class="p-title">
+                    <em>标题</em>
+                    <span>状态</span>
+                </p>
+                <ul>
+                    <li><i></i><strong>[<span>美食</span>]</strong> <a href="javascript:;">推荐几款性价比较高的冰箱</a><b
+                            class="nike"></b></li>
+                    <li><i></i><strong>[<span>美食</span>]</strong> <a href="javascript:;">推荐几款性价比较高的冰箱</a><b></b></li>
+                    <li><i></i><strong>[<span>美食</span>]</strong> <a href="javascript:;">推荐几款性价比较高的冰箱</a><b
+                            class="nike"></b></li>
+                    <li><i></i><strong>[<span>美食</span>]</strong> <a href="javascript:;">推荐几款性价比较高的冰箱</a><b></b></li>
+                    <li><i></i><strong>[<span>美食</span>]</strong> <a href="javascript:;">推荐几款性价比较高的冰箱</a><b></b></li>
+                </ul>
+                <div class="search-go">
+                    <label for="input">搜搜谁知道:</label><input type="text" placeholder="请输入关键字" id="input"><a
+                        href="javascript:;"></a>
+                </div>
+            </div>
+            <div class="con4-right">
+                <p class="sub-title">
+                    <span>HOT</span>
+                    <strong>红人烧客</strong>
+                    <a href="javascript:;">MORE</a>
+                </p>
+                <ul>
+                    <li>
+                        <a href="javascript:;">
+                            <img src="images/img-3.png" alt="">
+                            <p>
+                                <strong>HOT</strong>
+                                <span>潮流服饰任我行</span>
+                            </p>
+                        </a>
+                        <a href="javascript:;">
+                            <img src="images/img-3.png" alt="">
+                            <p>
+                                <strong>HOT</strong>
+                                <span>潮流服饰任我行</span>
+                            </p>
+                        </a>
+                        <a href="javascript:;">
+                            <img src="images/img-3.png" alt="">
+                            <p>
+                                <strong>HOT</strong>
+                                <span>潮流服饰任我行</span>
+                            </p>
+                        </a>
+                        <a href="javascript:;">
+                            <img src="images/img-3.png" alt="">
+                            <p>
+                                <strong>HOT</strong>
+                                <span>潮流服饰任我行</span>
+                            </p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:;"><img src="images/img-3.png" alt="">
+                            <p>
+                                <strong>HOT</strong>
+                                <span>潮流服饰任我行</span>
+                            </p>
+                        </a>
+                        <a href="javascript:;"><img src="images/img-3.png" alt="">
+                            <p>
+                                <strong>HOT</strong>
+                                <span>潮流服饰任我行</span>
+                            </p>
+                        </a>
+                        <a href="javascript:;"><img src="images/img-3.png" alt="">
+                            <p>
+                                <strong>HOT</strong>
+                                <span>潮流服饰任我行</span>
+                            </p>
+                        </a>
+                        <a href="javascript:;"><img src="images/img-3.png" alt="">
+                            <p>
+                                <strong>HOT</strong>
+                                <span>潮流服饰任我行</span>
+                            </p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:;"><img src="images/img-3.png" alt="">
+                            <p>
+                                <strong>HOT</strong>
+                                <span>潮流服饰任我行</span>
+                            </p>
+                        </a>
+                        <a href="javascript:;"><img src="images/img-3.png" alt="">
+                            <p>
+                                <strong>HOT</strong>
+                                <span>潮流服饰任我行</span>
+                            </p>
+                        </a>
+                        <a href="javascript:;"><img src="images/img-3.png" alt="">
+                            <p>
+                                <strong>HOT</strong>
+                                <span>潮流服饰任我行</span>
+                            </p>
+                        </a>
+                        <a href="javascript:;"><img src="images/img-3.png" alt="">
+                            <p>
+                                <strong>HOT</strong>
+                                <span>潮流服饰任我行</span>
+                            </p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="content5">
+            <div class="con5-left">
+                <p class="sub-title">
+                    <span>HELP</span>
+                    <strong>在线帮助</strong>
+                </p>
+                <p class="message">您有任何问题,都可以通过全国免费电话,或MSN在线客服与我们联系!</p>
+                <div>
+                    <a href="javascript:;">4006-100-516</a>
+                    <a href="javascript:;">100du.com@live.com</a>
+                </div>
+                <ul class="ml15">
+                    <li><strong>用户帮助</strong></li>
+                    <li><i></i> <a href="javascript:;">改革先锋名单</a></li>
+                    <li><i></i> <a href="javascript:;">国防科技事业改革</a></li>
+                    <li><i></i> <a href="javascript:;">农村改革的先行者</a></li>
+                </ul>
+                <ul>
+                    <li><strong>商户帮助</strong></li>
+                    <li><i></i> <a href="javascript:;">文物有效保护的</a></li>
+                    <li><i></i> <a href="javascript:;">义乌小商品市场的</a></li>
+                    <li><i></i> <a href="javascript:;">倾力支持国家改革开</a></li>
+                </ul>
+            </div>
+            <div class="con5-right">
+                <p class="sub-title">
+                    <span>100DU IN THE MEDIA</span>
+                    <strong>媒体声音</strong>
+                    <a href="javascript:;">MORE</a>
+                </p>
+                <ul>
+                    <li>
+                        <img src="images/24.png" alt="">
+                        <p><a href="javascript:;">手机人民网12月18日电 中国地震台网正式测定</a></p>
+                    </li>
+                    <li>
+                        <img src="images/24.png" alt="">
+                        <p><a href="javascript:;">12月18日04时58分在台湾海峡(北纬23.3</a></p>
+                    </li>
+                    <li>
+                        <img src="images/24.png" alt="">
+                        <p><a href="javascript:;">东经118.61度)发生3.5级地震，震源</a></p>
+                    </li>
+                    <li>
+                        <img src="images/24.png" alt="">
+                        <p><a href="javascript:;">正式测定：12月18日04时58分在台湾海</a></p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div><!--wrap-left end-->
+    <div class="wrap-right"><!--wrap-right begin-->
+        <div class="load">
+            <p class="title-right">
+                <span>HELP</span>
+                <strong>在线帮助</strong>
+            </p>
+            <div>
+                <span>用户名:</span>
+                <input type="text" name="user" id="user" class="user">
+
+                <label for="jzw"><input type="checkbox" name="" id="jzw" class="label">记住我</label>
+            </div>
+            <div>
+                <span>密 码:</span>
+                <input type="password" name="user" id="pass" class="pass">
+                <a href="javascript:;">登录</a>
+            </div>
+            <ul>
+                <li><i></i><a href="javascript:;">新用户注册</a></li>
+                <li><i></i><a href="javascript:;">忘记密码了</a></li>
+            </ul>
+        </div>
+        <div class="cj">
+            <a href="javascript:;" target="_blank" class="mt10">
+                <img src="images/img4.png" alt="">
+            </a>
+            <a href="javascript:;">
+                <img src="images/img-5.png" alt="">
+            </a>
+        </div>
+        <div class="box1">
+            <p class="title-right mt0">
+                <span>COUPONS</span>
+                <strong>抢卷儿</strong>
+                <a href="javascript:;">MORE</a>
+            </p>
+            <div class="menu">
+                <a href="javascript:;" class="on">人气<i></i></a>
+                <a href="javascript:;">推荐<i></i></a>
+                <a href="javascript:;">最新<i></i></a>
+            </div>
+            <ul class="mt0">
+                <li>
+                    <div>商店名</div>
+                    <div>省</div>
+                    <div>打印</div>
+                </li>
+                <li><i></i><a href="javascript:;">推荐几款性价比较高的冰箱</a><em>12%</em><span>345</span></li>
+                <li><i></i><a href="javascript:;">推荐几款性价比较高的冰箱</a><em>12%</em><span>345</span></li>
+                <li><i></i><a href="javascript:;">推荐几款性价比较高的冰箱</a><em>12%</em><span>345</span></li>
+                <li><i></i><a href="javascript:;">推荐几款性价比较高的冰箱</a><em>12%</em><span>345</span></li>
+                <li><i></i><a href="javascript:;">推荐几款性价比较高的冰箱</a><em>12%</em><span>345</span></li>
+            </ul>
+        </div>
+        <div class="shop">
+            <p class="sub-title">
+                <span>HELP</span>
+                <strong>在线帮助</strong>
+                <a href="javascript:;">MORE</a>
+            </p>
+            <ul>
+                <li>
+                    <img src="images/lufei.png" alt="">
+                    <h5><a href="javascript:;">汉来国际美食百汇</a></h5>
+                    <p><span>口味</span>创意中餐</p>
+                    <p><span>区域:</span>朝阳/CBD</p>
+                    <em></em>
+                </li>
+                <li>
+                    <img src="images/lufei.png" alt="">
+                    <h5><a href="javascript:;">汉来国际美食百汇</a></h5>
+                    <p><span>口味</span>创意中餐</p>
+                    <p><span>区域:</span>朝阳/CBD</p>
+                    <em></em>
+                </li>
+                <li>
+                    <img src="images/lufei.png" alt="">
+                    <h5><a href="javascript:;">汉来国际美食百汇</a></h5>
+                    <p><span>口味</span>创意中餐</p>
+                    <p><span>区域:</span>朝阳/CBD</p>
+                    <em></em>
+                </li>
+                <li>
+                    <img src="images/lufei.png" alt="">
+                    <h5><a href="javascript:;">汉来国际美食百汇</a></h5>
+                    <p><span>口味</span>创意中餐</p>
+                    <p><span>区域:</span>朝阳/CBD</p>
+                    <em></em>
+                </li>
+            </ul>
+        </div>
+        <div class="shop-360">
+            <p class="title-right mt0">
+                <span>360 SHOP</span>
+                <strong>全景逛店</strong>
+                <a href="javascript:;">MORE</a>
+            </p>
+            <a href="javascript:;" class="img-a">
+                <img src="images/360.png" alt="">
+            </a>
+            <div>苹果雪梨排骨汤</div>
+        </div>
+        <div class="sale">
+            <p class="title-right mt0">
+                <span>360 SHOP</span>
+                <strong>全景逛店</strong>
+                <a href="javascript:;">MORE</a>
+            </p>
+            <ol>
+                <li>
+                    <img src="images/lufei.png" alt="">
+                    <h5><a href="javascript:;">汉来国际美食百汇</a></h5>
+                    <p><span>口味</span>创意中餐</p>
+                    <p><span>区域:</span>朝阳/CBD</p>
+                    <em></em>
+                </li>
+            </ol>
+            <ul>
+                <li><i></i><strong>[<span>美食</span>]</strong> <a href="javascript:;">推荐几款性价比较高的冰箱</a></li>
+                <li><i></i><strong>[<span>美食</span>]</strong> <a href="javascript:;">推荐几款性价比较高的冰箱</a></li>
+                <li><i></i><strong>[<span>美食</span>]</strong> <a href="javascript:;">推荐几款性价比较高的冰箱</a></li>
+                <li><i></i><strong>[<span>美食</span>]</strong> <a href="javascript:;">推荐几款性价比较高的冰箱</a></li>
+                <li><i></i><strong>[<span>美食</span>]</strong> <a href="javascript:;">推荐几款性价比较高的冰箱</a></li>
+                <li><i></i><strong>[<span>美食</span>]</strong> <a href="javascript:;">推荐几款性价比较高的冰箱</a></li>
+                <li><i></i><strong>[<span>美食</span>]</strong> <a href="javascript:;">推荐几款性价比较高的冰箱</a></li>
+                <li><i></i><strong>[<span>美食</span>]</strong> <a href="javascript:;">推荐几款性价比较高的冰箱</a></li>
+            </ul>
+        </div>
+        <div class="coupons">
+            <p class="title-right mt0">
+                <span>360 SHOP</span>
+                <strong>全景逛店</strong>
+                <a href="javascript:;">MORE</a>
+            </p>
+            <ol>
+                <li>
+                    <img src="images/lufei.png" alt="">
+                    <h5><a href="javascript:;">汉来国际美食百汇</a></h5>
+                    <p><span>口味</span>创意中餐</p>
+                    <p><span>区域:</span>朝阳/CBD</p>
+                    <em></em>
+                </li>
+                <li>
+                    <img src="images/lufei.png" alt="">
+                    <h5><a href="javascript:;">汉来国际美食百汇</a></h5>
+                    <p><span>口味</span>创意中餐</p>
+                    <p><span>区域:</span>朝阳/CBD</p>
+                    <em></em>
+                </li>
+            </ol>
+            <ul>
+                <li><i></i><strong>[<span>美食</span>]</strong> <a href="javascript:;">推荐几款性价比较高的冰箱</a></li>
+                <li><i></i><strong>[<span>美食</span>]</strong> <a href="javascript:;">推荐几款性价比较高的冰箱</a></li>
+                <li><i></i><strong>[<span>美食</span>]</strong> <a href="javascript:;">推荐几款性价比较高的冰箱</a></li>
+                <li><i></i><strong>[<span>美食</span>]</strong> <a href="javascript:;">推荐几款性价比较高的冰箱</a></li>
+                <li><i></i><strong>[<span>美食</span>]</strong> <a href="javascript:;">推荐几款性价比较高的冰箱</a></li>
+                <li><i></i><strong>[<span>美食</span>]</strong> <a href="javascript:;">推荐几款性价比较高的冰箱</a></li>
+            </ul>
+        </div>
+    </div><!--wrap-right end-->
+</div><!--wrap end-->
+<div class="footer"><!--footyer begin-->
+    <ul>
+        <li><a href="javascript:;">关于我们</a>|</li>
+        <li><a href="javascript:;">联系我们</a>|</li>
+        <li><a href="javascript:;">版权声明</a>|</li>
+        <li><a href="javascript:;">加入我们</a>|</li>
+        <li><a href="javascript:;">问题反馈</a>|</li>
+        <li><a href="javascript:;">友情链接</a>|</li>
+        <li><a href="javascript:;">网站地图</a>|</li>
+        <li><a href="javascript:;">视频索引</a></li>
+    </ul>
+    <p>Copyright 208 www.100du.com 100度享乐网 版权所有   京ICP证070374号</p>
+</div><!--footer end-->
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

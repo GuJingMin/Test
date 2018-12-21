@@ -1,0 +1,176 @@
+@mixin right-box-global ($h){
+  width: 239px;
+  height: $h;
+  margin-bottom: 10px;
+  @include border-global;
+}
+@mixin menu ($w, $h, $m, $p, $a-w, $a-h, $a-p){
+  height: $h;
+  margin: $m;
+  width: $w;
+  padding-left: $p;
+  border-bottom: #e5e5e5 1px solid;
+  a {
+    display: block;
+    width: $a-w;
+    height: $a-h;
+    padding-left: $a-p;
+    border: #e5e5e5 1px solid;
+    float: left;
+    line-height: $a-h;
+    font-size: 12px;
+    color: #666;
+    margin-left: -1px;
+    margin-bottom: -1px;
+    border-radius: 3px 3px 0 0;
+    position: relative;
+    &:hover {
+      border-bottom-color: #fff;
+      color: #000;
+      i {
+        border-top-color: #d90000;
+      }
+    }
+    i {
+      width: 0;
+      height: 0;
+      border: #fff 4px solid;
+      border-top-color: #c1c1c1;
+      position: absolute;
+      top: 10px;
+      right: 12px;
+    }
+  }
+  a.on {
+    border-bottom-color: #fff;
+    color: #000;
+    i {
+      border-top-color: #d90000;
+    }
+  }
+}
+@mixin border-global {
+  border: #e5e5e5 1px solid;
+  border-radius: 3px;
+}
+@mixin title-global($w, $h, $p) {
+  width: $w;
+  height: $h;
+  line-height: $h;
+  padding: $p;
+  font-size: 12px;
+  span {
+    color: #cc0d13;
+    display: block;
+    float: left;
+  }
+  strong {
+    color: #010000;
+    display: block;
+    float: left;
+    margin-left: 5px;
+    font-weight: bold;
+    font-family: 'Microsoft YaHei';
+  }
+  a {
+    display: block;
+    float: right;
+    padding-right: 18px;
+    background: url("../images/17.png") no-repeat right center;
+    &:hover {
+      color: #cc0d13;
+    }
+  }
+}
+@mixin list-global($w, $h, $m, $a-w, $ml) {
+    height: $h;
+    width: $w;
+    margin: $m;
+    li {
+      width: $w;
+      height: 27px;
+      line-height: 27px;
+      border-bottom: #E5E5E5 1px dashed;
+      i {
+        display: block;
+        float: left;
+        width: 3px;
+        height: 3px;
+        background: #d90000;
+        margin: 12px 7px 12px 4px;
+      }
+      strong {
+        display: block;
+        float: left;
+        color: #767676;
+        span {
+          color: #d90000;
+        }
+      }
+      a {
+        margin-left: $ml;
+        display: block;
+        width: $a-w;
+        height: 27px;
+        line-height: 27px;
+        overflow: hidden;
+        float: left;
+        &:hover {
+          color: #d90000;
+        }
+      }
+    }
+}
+@mixin shop-list($h){
+  margin: 0 12px;
+  width: 214px;
+  height: $h;
+  li {
+    width: 214px;
+    height: 83px;
+    border-bottom: #E5E5E5 1px dashed;
+    margin-bottom: 10px;
+    position: relative;
+    img{
+      display: block;
+      width: 90px;
+      height: 67px;
+      border: #E5E5E5 1px solid;
+      padding: 2px;
+      margin-right: 12px;
+      float: left;
+    }
+    h5{
+      width: 104px;
+      height: 27px;
+      line-height: 27px;
+      float: left;
+      overflow: hidden;
+      a {
+        color: #d90000;
+        height: 27px;
+        font-size: 12px;
+      }
+    }
+    p{
+      width: 100px;
+      height: 18px;
+      line-height: 18px;
+      overflow: hidden;
+      float: left;
+      span{
+        color: #999;
+        padding-right: 6px;
+      }
+    }
+    em {
+      display: block;
+      position: absolute;
+      width: 40px;
+      height: 40px;
+      background: url("../images/34.png") no-repeat;
+      left: 60px;
+      bottom: 4px;
+    }
+  }
+}
